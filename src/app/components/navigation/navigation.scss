@@ -1,0 +1,31 @@
+@import '../../../assets/mixins.scss';
+@import '../../../assets/variables.scss';
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: white;
+
+  &:hover {
+      color: $brand;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include min-width('sm') {
+  .navigation {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__items {
+        flex-direction: row;
+      }
+  }
+}

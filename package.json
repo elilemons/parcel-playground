@@ -1,0 +1,21 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "posthtml": "^0.11.3",
+    "posthtml-include": "^1.2.0",
+    "sass": "^1.19.0"
+  },
+  "dependencies": {
+    "include": "^1.1.0"
+  }
+}

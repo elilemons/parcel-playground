@@ -1,0 +1,12 @@
+@mixin min-width($breakpoint-abbreviation) {
+  @if $breakpoint-abbreviation == 'xs' {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  @else if $breakpoint-abbreviation == 'sm' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
